@@ -19,4 +19,4 @@ licenses="Apache-2.0"
 
 ### PULL
 
-docker pull ghcr.io/darfig/htcondorexec:latest
+docker pull ghcr.io/darfig/htcondorsub:latest
