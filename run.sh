@@ -17,7 +17,7 @@ echo -n "${HTCONDOR_PASSWORD}" | sh -c "condor_store_cred add -c -i -"
 umask 0077; condor_token_create -identity condor@${CENTRAL_MANAGER} > /etc/condor/tokens.d/condor@${CENTRAL_MANAGER}
 
 # condor_config options
-echo SCHEDD_NAME = ${CENTRAL_MANAGER} >> /etc/condor/condor_config
+#echo SCHEDD_NAME = ${CENTRAL_MANAGER} >> /etc/condor/condor_config
 
 #start condor
 condor_master
