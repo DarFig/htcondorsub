@@ -6,9 +6,9 @@
 #------------------------------
 
 
-ARG VERSION=9.0.0
-ARG VERSION_M=9.0
-ARG HTCONDOR_LIST=/etc/apt/sources.list.d/htcondor.list
+ENV VERSION=9.0.0
+ENV VERSION_M=9.0
+ENV HTCONDOR_LIST=/etc/apt/sources.list.d/htcondor.list
 
 #FROM ghcr.io/darfig/sshbaseimage:latest
 FROM ubuntu:20.04
