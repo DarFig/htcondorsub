@@ -27,6 +27,7 @@ RUN apt-get update && \
 
 ENV HTCONDOR_PASSWORD="NONE"
 ENV CENTRAL_MANAGER="127.0.0.1"
+ENV FILESYSTEM_DOMAIN=""
 
 #ADD https://get.htcondor.org /getcondor.sh
 #RUN chmod u+x /getcondor.sh

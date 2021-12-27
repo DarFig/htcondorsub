@@ -16,6 +16,7 @@ licenses="Apache-2.0"
 **htcondor**
 - HTCONDOR_PASSWORD="NONE"
 - CENTRAL_MANAGER="127.0.0.1"
+- FILESYSTEM_DOMAIN=""
 
 ### PULL
 

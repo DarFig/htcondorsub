@@ -6,9 +6,12 @@ echo CONDOR_HOST = ${CENTRAL_MANAGER} > ${CONFIG_FILE}
 echo '# For details, run condor_config_val use role:get_htcondor_submit' >> ${CONFIG_FILE}
 echo 'use role:get_htcondor_submit' >> ${CONFIG_FILE}
 
-#if [[ "${SHARED_FS_DOMAIN}" ]]; then
-#	echo '${DOMAIN_CONFIG}' >> ${CONFIG_FILE}
-#fi
+# filesystemdomian
+echo "FILESYSTEM_DOMAIN = ${FILESYSTEM_DOMAIN}"  >> ${CONFIG_FILE}
+echo "UID_DOMAIN = ${FILESYSTEM_DOMAIN}"  >> ${CONFIG_FILE}
+echo "TRUST_UID_DOMAIN = TRUE"  >> ${CONFIG_FILE}
+echo "SOFT_UID_DOMAIN = TRUE"  >> ${CONFIG_FILE}
+
 
 #token
 rm -f /etc/condor/config.d/00-htcondor-${VERSION_M}.config
